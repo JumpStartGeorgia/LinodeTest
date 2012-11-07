@@ -59,9 +59,9 @@ LinodeTest::Application.configure do
   config.active_support.deprecation = :notify
 
 	# options for exception notification gem
-	config.middleware.use ExceptionNotifier,
-		:email_prefix => "[IRI Training Evaluations App Error (#{Rails.env})] ",
-		:sender_address => ENV['APPLICATION_ERROR_FROM_EMAIL'],
-		:exception_recipients => [ENV['APPLICATION_ERROR_TO_EMAIL']]
+#	config.middleware.use ExceptionNotifier,
+#		:email_prefix => "[IRI Training Evaluations App Error (#{Rails.env})] ",
+#		:sender_address => ENV['APPLICATION_ERROR_FROM_EMAIL'],
+#		:exception_recipients => [ENV['APPLICATION_ERROR_TO_EMAIL']]
 
 end
