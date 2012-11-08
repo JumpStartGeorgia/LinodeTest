@@ -1,5 +1,6 @@
 # http://stackoverflow.com/questions/9459369/rails-3-2-1-assets-precompiled-twice-on-deploy
 # override the default assets precompile task so that the nondigest task does not run
+=begin
 Rake::Task['assets:precompile:all'].clear
 namespace :assets do
   namespace :precompile do
@@ -9,3 +10,4 @@ namespace :assets do
     end
   end
 end
+=end
